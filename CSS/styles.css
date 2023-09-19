@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-primary-dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* CSS-зміні для повторного використання */
+:root {
+  --color-primary-dark: #31261a;
+  --color-primary-light: #faf4ea;
+  --color-brand-dark: #465929;
+  --color-brand-light: #819b57;
+}
+
+/* header section */
+
+.link {
+  color: var(--color-primary-light);
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+}
+
+.button {
+  padding: 16px 32px;
+  background: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 8px;
+  color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+  /* transparent – прозорий колір */
+}
+
+.button:active {
+  color: var(--color-brand-dark);
+  background-color: #faf4ea;
+}
+
+/* Hero-titel section */
+.hero-titel {
+  color: var(--color-primary-light);
+}
+
+.hero-titel .accent {
+  color: var(--color-brand-light);
+}
+
+/* advantages section */
+
+.advantages-list {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+}
+
+.section-titel .accent {
+  color: var(--color-brand-dark);
+}
+
+/* #hero-titel – стилізація через ID */
+/* .hero-titel – стилізація через клас */
+
+/* header .button – коли клас в середині тегу  */
+/* header.button – коли на самому header, є
+клас button */

@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Сучасна пекарня</title>
   </head>
   <body>
@@ -15,28 +22,28 @@
           <img src="./img/logo.svg" alt="Логотип сучасної пекарні" />
         </a>
         <ul>
-          <li><a href="#traditions-section">Наші традиції</a></li>
-          <li><a href="#chefs-section">Шеф-кухарі</a></li>
-          <li><a href="#format-section">Формати</a></li>
-          <li><a href="#contact-section">Контакти</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#format-section">Формати</a></li>
+          <li><a class="link" href="#contact-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">
-        Замовити дзвінок
-        <!-- Замовити дзвінок -->
-      </button>
+      <!-- Замовити дзвінок -->
+      <button class="button" type="button">Замовити дзвінок</button>
     </header>
     <main>
+      <!-- hero section -->
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-titel"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
       <section id="traditions-section">
-        <ul>
+        <!-- Перелік переваг -->
+        <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
+        <h2 class="section-titel">Новий формат традицій</h2>
         <p>
           <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
@@ -49,7 +56,9 @@
         <img src="./img/baker-man.jpg" alt="Чоловік пекар дивиться на батони" />
       </section>
       <section id="chefs-section">
-        <h2>Наші найкращі шеф -кухарі</h2>
+        <h2 class="section-titel">
+          Наші найкращі <span class="accent">шеф-кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -73,7 +82,7 @@
         </ul>
       </section>
       <section id="format-section">
-        <h2>Формати</h2>
+        <h2 class="section-titel">Формати</h2>
         <ul>
           <li>
             <article>
@@ -93,7 +102,7 @@
         </ul>
       </section>
       <section id="contact-section">
-        <h2>Приєднуйся до мережі пекарень</h2>
+        <h2 class="section-titel">Приєднуйся до мережі пекарень</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1694866492382!5m2!1suk!2sua"
           width="603"
@@ -145,3 +154,8 @@
     </footer>
   </body>
 </html>
+
+<!-- Inline – стиль в атрибуті тегу Ex: <h1 style="color:aqua"> Сучасна пекарня</h1> -->
+
+<!-- Embedded – стиль що задається в шапці документу
+      Ex: <style> h1 { background-color: brown; } </style> -->
