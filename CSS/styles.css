@@ -1,3 +1,36 @@
+/* Local font */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+}
+
 *,
 *::after,
 *::before {
@@ -7,10 +40,17 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--color-primary-dark);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 ul {
   list-style-type: none;
+}
+
+address {
+  font-style: normal;
 }
 
 /* CSS-зміні для повторного використання */
@@ -29,6 +69,7 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 .button {
@@ -38,6 +79,7 @@ ul {
   border-radius: 8px;
   color: var(--color-primary-light);
   cursor: pointer;
+  font-weight: 600;
 }
 
 .button:hover {
@@ -54,6 +96,9 @@ ul {
 /* Hero-titel section */
 .hero-titel {
   color: var(--color-primary-light);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 900;
 }
 
 .hero-titel .accent {
@@ -67,13 +112,82 @@ ul {
   background-color: var(--color-brand-light);
 }
 
+.section-titel {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
 .section-titel .accent {
   color: var(--color-brand-dark);
+}
+
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* traditions section */
+
+.traditions-text .brand {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
+.traditions-text .uppercase {
+  text-transform: uppercase;
+}
+
+/* Chefs section */
+
+.chef-titel {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Format section */
+
+.format-titel {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.format-text {
+  font-size: 14px;
+}
+
+/* Footer */
+
+.address-link {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+
+.address-copyright {
+  font-size: 14px;
+  color: #a18268;
 }
 
 /* #hero-titel – стилізація через ID */
 /* .hero-titel – стилізація через клас */
 
 /* header .button – коли клас в середині тегу  */
+/* header button – перелік класів в тезі  */
 /* header.button – коли на самому header, є
 клас button */
+
+/* Ctrl+Shift+P – змінити мову VS Code */
+
+/* id використовують для реалізації посилання,
+ або для користування елементом через JS*/
+
+/* 'wasd zxcv' одинарні лапки, коли в назві
+  шрифта є два слова */
+
+/* Ctrl+F2 – виділяє всі однакові елементи */
